@@ -12,7 +12,7 @@ Write and an authentication API flow (registration/login) on the authentication 
 
 
 ## 🔗 Links
-[![laravel microservice](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Jupit-Digital-Service/jupit-laravel-test)
+[![laravel microservice] Laravel ](https://github.com/Jupit-Digital-Service/jupit-laravel-test)
 ## Assumptions
 
 The following assumptions are made in this case study:
