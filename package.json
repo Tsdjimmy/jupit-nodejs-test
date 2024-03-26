@@ -1,0 +1,19 @@
+{
+  
+  "dependencies": {
+  
+    
+  "amqplib": "^0.10.3",
+  
+    
+  "nodemailer": "^6.9.13"
+  
+  },
+  
+  "scripts": {
+  
+    
+  "start": "node index.js"
+  
+  }
+}
