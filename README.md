@@ -1,38 +1,65 @@
-
 # Jupit Technical Test
 
-This is goint to test your understanding of microservices, api architecture, use of PHP/Laravel Node js/JavaScript.
-
+This test is designed to evaluate your understanding of microservices, API architecture, and your proficiency with PHP/Laravel and Node.js/JavaScript.
 
 ## Question
 
-This is an Node js microservice repo(handles your notifications and mailing) and below is a link to a laravel microservice repository(handles your authentication api logic).
-
-Write and an authentication API flow (registration/login) on the authentication microservice, all mails/notifications will go through your notification microservice.
-
+You are tasked with creating an authentication API flow (registration/login) within a Laravel microservice. This microservice will handle all authentication logic. Additionally, any mails or notifications triggered by this process should be handled by a separate Node.js microservice. The interaction between these two services is a critical part of this challenge.
 
 ## 🔗 Links
-[ Laravel ](https://github.com/Jupit-Digital-Service/jupit-laravel-test)
+
+- [Laravel Microservice Repository](https://github.com/Jupit-Digital-Service/jupit-laravel-test)
+
 ## Assumptions
 
-The following assumptions are made in this case study:
-1. the both microservices communicate via rest API
-2. the system is hosted on different machines (all Linux)
-3. the microservices are test driven
-4. the implementation works
+For the purpose of this case study, the following assumptions are made:
+
+1. Both microservices communicate via REST API.
+2. The system is hosted on separate Linux machines.
+3. The development of these microservices is driven by tests.
+4. The implementations are functional and efficient.
+
+## How to Submit
+
+1. Clone the relevant repository.
+2. Checkout a new branch, naming it after your email address.
+3. Develop the required functionality on your branch.
+4. Push your code along with the Postman API documentation to the repository.
+5. Repeat the same process for both the Node.js and Laravel microservices.
+6. All submissions will be considered valid until the submission deadline is exceeded.
+
+## Setup Instructions for Node.js Notification Service
+
+### Prerequisites
+
+Ensure you have Node.js, npm, and RabbitMQ installed on your machine.
+
+### Installation & Configuration
+
+1. **Clone the Repository**
+   
+   ```sh
+   git clone https://github.com/Tsdjimmy/jupit-nodejs-test.git
+   cd jupit-nodejs-test
+   ```
+
+2. **Install Dependencies**
+
+   ```sh
+   npm install
+   ```
+
+3. **Configure RabbitMQ and Email Settings**
+
+   Update the RabbitMQ connection string in `index.js` and configure your email sender details in the `mailer` module.
 
 
-## How to submit
+4. **Start the Service**
 
-1. clone this repository
-2. checkout a new branch with your email as name
-3. work on the new branch
-4. push your code alongside the postman api documentation
-5. repeat the same process in the laravel microservice
-6. all submissions remains valid until the deadline is exceeded
+   ```sh
+   node index.js
+   ```
 
+   The service will listen for requests in laravel and send emails accordingly.
 
-## Note
-
-You are adviced to throw in all the knowledge you have acquired writing node js and laravel
 
